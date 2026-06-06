@@ -1,13 +1,10 @@
 import { Route, Routes } from "react-router";
-import { Layout } from "@/layout/layout";
-import { HomePage } from "@/pages/Home/home";
+import { SetupGuidePage } from "@/pages/SetupGuide/setup-guide";
 
 export function AppRoutes() {
   return (
     <Routes>
-      <Route element={<Layout />}>
-        <Route element={<HomePage />} index />
-      </Route>
+      <Route element={<SetupGuidePage />} index />
     </Routes>
   );
 }
